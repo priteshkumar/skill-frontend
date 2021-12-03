@@ -2,8 +2,14 @@
 
 > [UX/UI phases](https://success.outsystems.com/Documentation/Best_Practices/Development/Front-End_Journey%3A_From_Mockups_to_Code)
 
+- Starts with a UX Concept, where you’ll try to translate the business requirements into some workflows and wireframes.
 
-### Wireframing/mockups
+- Then goes to a UI Designer that will create High-Fidelity mockups to provide a good overview on what the application would look like.
+
+- Next step is the Front-End Development, where we convert the mockups into application screens and user interactions.
+
+
+### Wireframing
 
 > wireframe is a **blueprint/schematic** which tells about the structure  of a website(helpful for communicating the structure to coders/designers).
 

@@ -1,3 +1,8 @@
+## Front-End Journey: From Mockups to Code
+
+> [UX/UI phases](https://success.outsystems.com/Documentation/Best_Practices/Development/Front-End_Journey%3A_From_Mockups_to_Code)
+
+
 ### Wireframing/mockups
 
 > wireframe is a **blueprint/schematic** which tells about the structure  of a website(helpful for communicating the structure to coders/designers).

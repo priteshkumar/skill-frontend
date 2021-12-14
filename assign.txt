@@ -1,0 +1,17 @@
+2- The call flow explains website rendering in browser :
+
+a) URL to IP address lookup call flow:
+
+website url entered in address bar -> browser searches for url's IP address in browser cache and os cache -> if not found searches for IP addr in local network's router cache -> if not found router forwards the dns lookup request to ISP -> ISP responds back with correct IP address for the website URL .
+
+b) Once the browser has IP address of the webserver(hosting the website), it initiates TCP connection with the webserver.
+
+on successful connection , browser sends HTTP request for the webpage residing at root of website url.
+
+Remote webserver responds back with the website's webpage corresponding to the website url.
+
+Browser renders the webpage content on user screen.
+
+see the below link for more details:
+
+https://www.freecodecamp.org/news/what-happens-when-you-hit-url-in-your-browser/

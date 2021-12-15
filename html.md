@@ -9,6 +9,7 @@ Nodes can have event handlers attached to them. Once an event is triggered, the 
 
 ![Screenshot](pic_htmltree.gif)
 
+
 ## HTML5 syntax
 
 https://www.w3schools.com/html/html_entities.asp

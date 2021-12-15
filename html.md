@@ -1,3 +1,5 @@
+[check HTML5 support](https://caniuse.com/)
+
 ## DOM
 
 The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure

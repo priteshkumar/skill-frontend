@@ -8,3 +8,10 @@ wherein each node is an object representing a part of the document. **The DOM re
 Nodes can have event handlers attached to them. Once an event is triggered, the event handlers get executed.[2]
 
 ![Screenshot](pic_htmltree.gif)
+
+## HTML5 syntax
+
+https://www.w3schools.com/html/html_entities.asp
+
+> Reserved characters in HTML must be replaced with character entities. (e.g. < , > , non breaking space)
+

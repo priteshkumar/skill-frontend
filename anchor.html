@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="This is a webpage about html elements" />
     <title>HTML webpage example</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://www.w3.org/html/logo/downloads/HTML5_Badge_32.png"
+    />
     <style>
       html,
       body {
@@ -39,10 +44,20 @@
           <h1>Welcome to HTML5 world</h1>
           <p style="font-size: 1.5em">HTML5 rocks!!</p>
           <ul style="list-style-type: none">
+            <!-- 
+              a target attribute specifies in
+              which browser context to load the linked webpage
+              1. _self : current browser context 
+              2. _blank : new tab or window 
+              3. _parent : parent browser context
+              4. _top : topmost parent/ancestor browser context
+            -->
             <li><a href="e1.html" target="_self">First webpage</a></li>
-            <li><a href="e2.html" target="_self">Sticky footer</a></li>
+            <li><a href="e2.html" target="_blank">Sticky footer</a></li>
             <li>
-              <a href="definition-list.html" target="_blank">Definition list</a>
+              <a href="definition-list.html" target="_parent"
+                >Definition list</a
+              >
             </li>
             <li><a href="anchor.html" target="_top">Anchor element</a></li>
           </ul>

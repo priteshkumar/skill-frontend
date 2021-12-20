@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lake Tahoe ImageMap</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      .content {
+        min-height: 100%;
+      }
+      .content-inside {
+        padding: 20px;
+        padding-bottom: 50px;
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      footer {
+        height: 50px;
+        line-height: 50px;
+        margin-top: -50px;
+        text-align: center;
+        background-color: lightsteelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="content-inside">
+        <h2 style="font-weight: 100">Lake Tahoe Image (clickable)</h2>
+        <img
+          src="https://i.ibb.co/x2WXsvj/Lake-Tahoe-water-shutterstock-1164844816.jpg"
+          usemap="#image-map"
+        />
+
+        <map name="image-map">
+          <area
+            target="_self"
+            alt="south lake tahoe"
+            title="south lake tahoe"
+            href="https://upload.wikimedia.org/wikipedia/commons/4/4e/Fallen_Leaf_Lake_and_Lake_Tahoe_South_Shore.jpg"
+            coords="7,259,633,424"
+            shape="rect"
+          />
+          <area
+            target="_self"
+            alt="freel peak"
+            title="freel peak"
+            href="./freel-peak.html"
+            coords="6,83,633,190"
+            shape="rect"
+          />
+        </map>
+      </div>
+    </div>
+    <footer>&copy;Pritesh Kumar</footer>
+  </body>
+</html>

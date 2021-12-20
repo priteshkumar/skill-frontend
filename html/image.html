@@ -16,7 +16,7 @@
       }
       .content-inside {
         padding: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
       }
       footer {
         height: 50px;
@@ -25,14 +25,26 @@
         text-align: center;
         background-color: lightsteelblue;
       }
-      .image {
+      .image,
+      .mediainfo {
         width: 80%;
         margin: 0 auto;
         margin-top: 16px;
       }
+      .mediainfo {
+        width: 100%;
+        margin-bottom: 16px;
+        background-color: lemonchiffon;
+      }
       img {
         max-width: 100%;
         height: auto;
+      }
+      .mediainfo img {
+        float: left;
+        max-width: 50%;
+        height: auto;
+        margin-right: 10px;
       }
     </style>
   </head>
@@ -47,6 +59,17 @@
         <div class="image">
           <img src="../images/laketahoe.jpeg" alt="lake tahoe" />
         </div>
+        <p class="mediainfo">
+          <img src="../images/saltlakecity.jpeg" alt="saltlakecity" />
+
+          <strong>Salt Lake City</strong> (often shortened to Salt Lake and
+          abbreviated as SLC) is the capital and most populous city of the U.S.
+          state of Utah, as well as the seat of Salt Lake County, the most
+          populous county in Utah.Salt Lake City has developed a strong tourist
+          industry based primarily on skiing and outdoor recreation. It hosted
+          the 2002 Winter Olympics.
+        </p>
+        <div style="clear: both"></div>
       </div>
     </div>
     <footer>Pritesh Kumar</footer>

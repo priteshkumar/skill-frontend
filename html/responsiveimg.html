@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture image tag example</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      .content {
+        min-height: 100%;
+      }
+      .content-inside {
+        padding: 20px;
+        padding-bottom: 70px;
+        text-align: center;
+      }
+      footer {
+        height: 50px;
+        line-height: 50px;
+        margin-top: -50px;
+        text-align: center;
+        background-color: lightsteelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="content-inside">
+        <div style="text-align: center">
+          <h1>CoolImages.com</h1>
+          <p style="font-size: 1.2em"><em>Picture is art!!!</em></p>
+        </div>
+        <hr />
+        <picture>
+          <source
+            media="(min-width: 650px)"
+            srcset="../images/laketahoe.jpeg"
+          />
+          <source media="(min-width: 465px)" srcset="../images/telaviv.jpeg" />
+          <img
+            src="../images/stockholm.jpeg"
+            style="max-width: 100%; height: auto"
+          />
+        </picture>
+      </div>
+    </div>
+    <footer>Pritesh Kumar</footer>
+  </body>
+</html>

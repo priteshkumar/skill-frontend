@@ -22,3 +22,6 @@ https://www.w3schools.com/html/html_entities.asp
 > "name" attribute is essential for including the input value in data sent to server side. 
 
 ```<input type="radio" id="java" name="codinglanguage">```
+
+
+> **textarea resize** option : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#controlling_whether_a_textarea_is_resizable

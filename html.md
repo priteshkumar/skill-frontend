@@ -16,3 +16,12 @@ https://www.w3schools.com/html/html_entities.asp
 
 > Reserved characters in HTML must be replaced with character entities. (e.g. < , > , non breaking space)
 
+### Form input ###
+> All input types should have a "id" and "name" attribute.
+
+> "name" attribute is essential for including the input value in data sent to server side. 
+
+```<input type="radio" id="java" name="codinglanguage">```
+
+
+> **textarea resize** option : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#controlling_whether_a_textarea_is_resizable

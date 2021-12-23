@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            text-align: center;
+        }
+        form{
+    background-color:#CCE4FF;
+  width:40%;
+  margin:0 auto;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align:left;
+  padding-left:15px;
+  
+}
+label{
+  display:inline-block;
+  color:grey;
+  font-weight:550;
+  text-align:right;
+  width:100px;
+}
+input{
+  padding:12px 5px;
+}
+h4{
+  font-weight:100;
+}
+textarea{
+  resize:none;
+}
+    </style>
+</head>
+<body>
+    <div style="text-align:center">
+        <h1><u>Simple Form</u></h1>
+        </div>
+      <div class="content">
+        <form action="/test.php" method="post">
+          <fieldset>
+            <legend>Personal Details</legend>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="first name" size="40"><br><br>
+             
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="last name" size="40"><br><br>
+              
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="enter email..." size="40"><br><br>
+            <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" placeholder="enter dob...">
+            </fieldset>
+          <fieldset>
+            <legend>Education Details</legend>
+            <h4>Highest Education</h4>
+            <input type="radio" id="undergrad" name="hdegree" value="Undergrad">
+            <label for="undergrad">Undergrad</label>
+             <input type="radio" id="grad" name="hdegree" value="grad">
+            <label for="grad">Graduate</label>
+            <input type="radio" id="postgrad" name="hdegree" value="postgrad">
+            <label for="postgrad">PostGraduate</label><br><br>
+            <label for="adegrees">Choose Degree</label>
+            <select id="adegrees" name="adegrees" multiple>
+              <option value="DIPLOMA">DIPLOMA</option>
+              <option value="BTECH">BTECH</option>
+              <option value="BE">BE</option>
+              <option value="MTECH">MTECH</option>
+              <option value="PHD">PHD</option>
+              </select>
+            </fieldset>
+          <fieldset>
+            <legend>About Me</legend>
+            <textarea id="aboutme" name="aboutme" rows="10" style="width:90%;" placeholder="Introduce yourself...">
+              </textarea>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit" style="width:24%;">
+        </div>
+</body>
+</html>

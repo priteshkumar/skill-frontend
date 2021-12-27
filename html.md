@@ -16,6 +16,11 @@ https://www.w3schools.com/html/html_entities.asp
 
 > Reserved characters in HTML must be replaced with character entities. (e.g. < , > , non breaking space)
 
+### HTML5 structuring web page content 
+
+> https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
+
+
 ### Form input ###
 > All input types should have a "id" and "name" attribute.
 
@@ -35,3 +40,4 @@ Each time you have a set of radio buttons, you should nest them inside a `<field
   Ideally, long forms should be spread across multiple pages, 
   but if a form is getting long and must be on a single page,
   putting the different related sections inside different fieldsets improves usability.```
+

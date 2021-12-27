@@ -21,6 +21,11 @@ https://www.w3schools.com/html/html_entities.asp
 > https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
 
 
+### HTML markup validator
+
+https://validator.w3.org/
+
+
 ### Form input ###
 > All input types should have a "id" and "name" attribute.
 

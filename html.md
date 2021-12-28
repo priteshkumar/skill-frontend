@@ -48,3 +48,16 @@ https://validator.w3.org/
 ### Embedding external web pages(Iframe)
 
 > https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies
+
+### Embedding pdf document(see below html markup)
+
+```
+<!-- PDF embed here  -->
+    <object data="./media/mypdf.pdf" type="application/pdf"
+        width="100%" height="500px">
+  <p>You don't have a PDF plugin, but you can
+    <a href="mypdf.pdf">download the PDF file.
+    </a>
+  </p>
+</object>
+```

@@ -33,9 +33,17 @@
       }
       header {
         background-color: black;
-        text-align: center;
+        text-align: left;
         height: 70px;
         line-height: 70px;
+        display: flex;
+        align-items: center;
+      }
+      .logo {
+        width: 40px;
+        height: 40px;
+        margin-left: 30px;
+        margin-right: 10px;
       }
       h1 {
         margin: 0;
@@ -48,7 +56,10 @@
     </style>
   </head>
   <body>
-    <header><h1 class="neon">Do You Rock!!</h1></header>
+    <header>
+      <img class="logo" src="../images/music-icon.svg" />
+      <h1 class="neon">DoYouRock.<span style="font-size: 0.6em">com</span></h1>
+    </header>
     <div class="mplayer">
       <img src="../images/icon.png" alt="mplayer icon" />
       <audio controls>

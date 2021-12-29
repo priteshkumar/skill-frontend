@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>>Iframe example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        background-color: snow;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      }
+      header {
+        padding-top: 15px;
+        height: 110px;
+        background-color: lightsalmon;
+      }
+      h1 {
+        margin: 0;
+        text-align: center;
+        color: #556b2f;
+      }
+      nav {
+        height: 50px;
+        background-color: #ff8c00;
+        margin-left: 5px;
+        margin-right: 5px;
+        line-height: 40px;
+      }
+      ul {
+        list-style-type: none;
+        text-align: center;
+        padding-top: 5px;
+      }
+      ul li {
+        display: inline-block;
+        width: 20%;
+        font-size: 1.2em;
+      }
+      section {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 16px;
+        display: flex;
+        flex-direction: row wrap;
+        justify-content: center;
+      }
+      article {
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-right: 5%;
+      }
+      p {
+        font-family: "Open Sans", sans-serif;
+        text-align: left;
+      }
+      iframe {
+        border-radius: 10px 10px;
+        box-shadow: 10px 10px 30px silver;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>IFRAMES ARE AWESOME!!</h1>
+      <nav>
+        <ul>
+          <li><a href="#AR1">wikipedia</a></li>
+          <li><a href="#AR2">google maps</a></li>
+          <li><a href="#AR3">youtube</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article id="AR1">
+          <h3><u>IFRAME WIKIPEDIA PAGE</u></h3>
+          <p>
+            IFRAME is used for embedding external web pages into current web
+            page. e.g. add youtube video/google map to your webpage.See below
+            example where <mark>wikipedia page for iframe</mark> is embedded in
+            current webpage.
+          </p>
+          <iframe
+            src="https://en.wikipedia.org/wiki/HTML_element#Frames"
+            title="iframe wikipedia page"
+            allowfullscreen
+            width="100%"
+            height="400px"
+            style="border: 0"
+          >
+            <p>
+              <a href="https://en.wikipedia.org/wiki/HTML_element#Frames"
+                >wikpedia link for iframe</a
+              >
+            </p></iframe
+          >
+        </article>
+        <article id="AR2">
+          <h3><u>GOOGLE MAPS IFRAME</u></h3>
+          <p>
+            IFRAME is used for embedding external web pages into current web
+            page. e.g. add youtube video/google map to your webpage.See below
+            example where <mark>wikipedia page for iframe</mark> is embedded in
+            current webpage.
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26369829.16178967!2d-113.68858117737727!3d36.21584424181649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1640676624944!5m2!1sen!2sge"
+            width="100%"
+            height="400px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </article>
+        <article id="AR3">
+          <h3><u>IFRAME YOUTUBE VIDEO</u></h3>
+          <p>
+            IFRAME is used for embedding external web pages into current web
+            page. e.g. add youtube video/google map to your webpage.See below
+            example where <mark>wikipedia page for iframe</mark> is embedded in
+            current webpage.
+          </p>
+          <iframe
+            width="100%"
+            height="400px"
+            src="https://www.youtube.com/embed/s4BibernJxU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

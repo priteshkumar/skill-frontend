@@ -21,6 +21,11 @@ https://www.w3schools.com/html/html_entities.asp
 > https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
 
 
+### HTML markup validator
+
+https://validator.w3.org/
+
+
 ### Form input ###
 > All input types should have a "id" and "name" attribute.
 
@@ -31,13 +36,32 @@ https://www.w3schools.com/html/html_entities.asp
 
 > **textarea resize** option : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#controlling_whether_a_textarea_is_resizable
 
-### Form fieldset details ###
-
-Each time you have a set of radio buttons, you should nest them inside a `<fieldset>` element
+### Form fieldset details
   
  ```Each time you have a set of radio buttons, you should nest them inside a <fieldset> element.
   There are other use cases, and in general the <fieldset> element can also be used to section a form. 
   Ideally, long forms should be spread across multiple pages, 
   but if a form is getting long and must be on a single page,
-  putting the different related sections inside different fieldsets improves usability.```
+  putting the different related sections inside different fieldsets improves usability.
+  ```
 
+### Embedding external web pages(Iframe)
+
+> https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies
+
+### Embedding pdf document(see below html markup)
+
+```
+<!-- PDF embed here  -->
+    <object data="./media/mypdf.pdf" type="application/pdf"
+        width="100%" height="500px">
+  <p>You don't have a PDF plugin, but you can
+    <a href="mypdf.pdf">download the PDF file.
+    </a>
+  </p>
+</object>
+```
+
+### SVG IMAGES(vector graphics)
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web

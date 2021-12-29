@@ -1,84 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is a webpage about html elements" />
-    <title>HTML webpage example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Mozilla splash page</title>
     <link
-      rel="shortcut icon"
-      type="image/png"
-      href="https://www.w3.org/html/logo/downloads/HTML5_Badge_32.png"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+      rel="stylesheet"
+      type="text/css"
     />
     <style>
-      html,
+      /* header and body setup */
+
+      html {
+        font-family: "Open Sans", sans-serif;
+        background: url(./images/pattern.png);
+      }
+
       body {
-        height: 100%;
-        margin: 0;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
       }
-      .content {
-        min-height: 100%;
+
+      /* Header styling */
+
+      header {
+        height: 150px;
       }
-      .content-inside {
+
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+
+      /* main section and video styling */
+
+      main {
+        background: #ccc;
+      }
+
+      article {
         padding: 20px;
-        padding-bottom: 50px;
       }
-      footer {
-        height: 50px;
-        line-height: 50px;
-        margin-top: -50px;
-        text-align: center;
-        background-color: lightsteelblue;
+
+      h2 {
+        margin-top: 0;
       }
-      ul li {
-        display: inline-block;
-        margin-right: 7px;
+
+      p {
+        line-height: 2;
+      }
+
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+
+      /* further info links */
+
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.5),
+          inset 0 -3px 2px rgba(0, 0, 0, 0.5);
+      }
+
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+
+      .further-info img {
+        max-width: 100%;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      /* Red panda image */
+
+      .red-panda img {
+        display: block;
+        max-width: 100%;
       }
     </style>
   </head>
   <body>
-    <div class="content">
-      <div class="content-inside">
-        <div style="text-align: center">
-          <h1>Welcome to HTML5 world</h1>
-          <p style="font-size: 1.5em">HTML5 rocks!!</p>
-          <ul style="list-style-type: none">
-            <li><a href="e1.html" target="_self">First webpage</a></li>
-            <li><a href="e2.html" target="_blank">Sticky footer</a></li>
-            <li>
-              <a href="definition-list.html" target="_top">Definition list</a>
-            </li>
-            <li><a href="anchor.html" target="_parent">Anchor element</a></li>
-          </ul>
-        </div>
-        <hr />
-        <h2>HTML5 INTRO</h2>
-        <p>HTML5 is latest <strong>HTML</strong> version by WHATWG</p>
-        <p>
-          <em>HTML5 includes detailed processing models</em> to encourage more
-          interoperable implementations;<br />
-          it extends, improves, and rationalizes the markup available for
-          documents<br />
-          and introduces markup and application programming interfaces (APIs)
-          for complex web applications.
-        </p>
-        <!-- see use of sub tag and emoji -->
-        <p>Use H<sub>2</sub>O more &#9996;</p>
-        <!-- pre tag is used to present preformatted content 
-    it doesnt remove spaces and line breaks 
-    as in the content
-    -->
-        <pre style="text-align: left; margin: 0 auto">
-    Pritesh Kumar
-    email: pritesh.kumar2@gmail.com
-    Ph no: 9916009907
-    <a title="linkedin profile" href="https://www.linkedin.com/in/pritesh-singh-0053a21a/">LinkedIn</a>
-    </pre>
-      </div>
-    </div>
-    <!-- sticky footer at the bottom of the webpage example-->
+    <header>
+      <h1>Mozilla</h1>
+      <!-- insert <img> element, link to the small
+          version of the Firefox logo -->
+      <img src="./images/firefox-logo120.png" alt="firefox logo" />
+    </header>
 
-    <footer>&copy;Pritesh Kumar</footer>
+    <main>
+      <article>
+        <!-- insert iframe from youtube -->
+        <iframe
+          width="400"
+          height="315"
+          src="https://www.youtube.com/embed/ojcNcvb1olg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <h2>Rocking the free web</h2>
+
+        <p>
+          Mozilla are a global community of technologists, thinkers, and
+          builders, working together to keep the Internet alive and accessible,
+          so people worldwide can be informed contributors and creators of the
+          Web. We believe this act of human collaboration across an open
+          platform is essential to individual growth and our collective future.
+        </p>
+
+        <p>
+          Click on the images below to find more information about the cool
+          stuff Mozilla does.
+          <a href="https://www.flickr.com/photos/mathiasappel/21675551065/"
+            >Red panda picture</a
+          >
+          by Mathias Appel.
+        </p>
+      </article>
+
+      <div class="further-info">
+        <!-- insert images with srcsets and sizes -->
+        <a href="https://www.mozilla.org/en-US/firefox/new/">
+          <img
+            srcset="
+              ./images/firefox-logo120.png 120w,
+              ./images/firefox-logo400.png 400w
+            "
+            sizes="(max-width: 500px) 120px,
+         400px"
+            src="./images/firefox-logo.png"
+            alt="firefox logo"
+          />
+        </a>
+        <a href="https://www.mozilla.org/">
+          <img
+            srcset="
+              ./images/mozilla-dinosaur-head120.png 120w,
+              ./images/mozilla-dinosaur-head400.png 400w
+            "
+            sizes="(max-width: 500px) 120px,
+         400px"
+            src="./images/mozilla-dinosaur-head.png"
+            alt="mozilla logo"
+          />
+        </a>
+        <a href="https://addons.mozilla.org/">
+          <img
+            srcset="
+              ./images/firefox-addons120.jpg 120w,
+              ./images/firefox-addons.jpg    400w
+            "
+            sizes="(max-width: 500px) 120px,
+         400px"
+            src="./images/firefox-addon.jpg"
+            alt="firefox addons logo"
+          />
+        </a>
+        <a href="https://developer.mozilla.org/en-US/">
+          <img
+            srcset="./images/mdn.svg 120w, ./images/mdn.svg 400w"
+            sizes="(max-width: 500px) 120px,
+         400px"
+            src="./images/mdn.svg"
+            alt="mozilla developer logo"
+          />
+        </a>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="red-panda">
+        <!-- insert picture element -->
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="./images/red-panda600.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="./images/red-panda1200.jpg"
+          />
+          <img src="./images/red.jpg" />
+        </picture>
+      </div>
+    </main>
   </body>
 </html>

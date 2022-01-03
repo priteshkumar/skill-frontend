@@ -65,3 +65,7 @@ https://validator.w3.org/
 ### SVG IMAGES(vector graphics)
 
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web
+
+### embedding audio
+
+https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Cross-browser_audio_basics

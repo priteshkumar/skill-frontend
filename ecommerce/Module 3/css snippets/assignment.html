@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            font-family: Tahoma;
+        }
+
+        /* color for all paragraphs */
+        p {
+            color: #808080;
+        }
+
+        .primary {
+            color: black;
+        }
+
+        /* Spacehips div p specificity test */
+        div#main div.spaceships p {
+            color: grey;
+        }
+
+        div.spaceships p {
+            color: red;
+        }
+
+        h3~p {
+            color: yellow;
+        }
+
+        div div p {
+            color: blue;
+        }
+
+        /* Spacehips div p.primary specificity test */
+        div#main div.spaceships p.primary {
+            color: magenta;
+        }
+
+        div.spaceships p.primary {
+            color: green;
+        }
+
+        h3~p.primary {
+            color: orange;
+        }
+
+        div div p.primary {
+            color: chocolate;
+        }
+
+        /* Are IDs or Classes more specific? */
+        #pink {
+            color: #FF1493;
+        }
+
+        .red {
+            color: #FF4500;
+        }
+
+        ul li:first-child {
+            color: orange
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <p class="primary">Line 1</p>
+        <div>
+            <div id="spacehip_1" class="spaceships">
+                <h3>Line 2</h3>
+                <p class="primary">Line 3</p>
+                <p>Line 4</p>
+                <p>Line 5</p>
+                <ul>
+                    <li>Line 6</li>
+                    <li>Line 7</li>
+                    <li class="red" id="pink">Line 8</li>
+                </ul>
+            </div>
+            <div>
+            </div>
+</body>
+
+</html>

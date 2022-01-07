@@ -1,0 +1,22 @@
+4-  The various HTML5 elements provided for media content are below : 
+
+a)audio : used to embed sound content in web page.
+
+b) video : the &lt;video&gt; element embeds a media player which supports video playback into the document.
+
+
+
+c)track : The &lt;track&gt; element is used as a child of the media elements, audio and video. It lets you specify timed text tracks (or time-based data), for example to automatically handle subtitles.
+
+
+
+d)embed : The  &lt;embed&gt; element embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in.
+
+
+
+e)source: the &lt;source&gt; element specifies multiple media resources for the picture/audio/video element. It is an empty element, meaning that it has no content and does not have a closing tag.
+
+f)getUserMedia api : It's also possible to retrieve a live stream from a webcam and/or microphone using getUserMedia and the Stream API.
+
+ 
+

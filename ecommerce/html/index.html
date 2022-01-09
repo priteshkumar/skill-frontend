@@ -8,12 +8,16 @@
     <style>
       body {
         margin: 0;
+        text-align: center;
       }
       header {
         text-align: center;
         height: 50px;
         line-height: 50px;
         padding-top: 10px;
+      }
+      .app-banner {
+        width: calc(710px + 6% + 16%);
       }
     </style>
   </head>
@@ -45,6 +49,13 @@
             alt="twitter"
             style="margin-right: 1.4%"
         /></a>
+        <!-- searchbar image is created using image-editor
+        this is for demo.
+        in a working homepage , this will be replaced 
+        by a form search input styled by css
+        morenavfinal img is also for demo
+        created using image-editor
+        -->
         <img src="../images/homepage/searchbar.png" />
         <img src="../images/homepage/morenavfinal.png" alt="morenavlinks" />
         <img
@@ -54,5 +65,29 @@
         />
       </nav>
     </header>
+    <main style="width: 100%; margin-top: 24px">
+      <nav id="appnav">
+        <img
+          id="applogo"
+          src="../images/homepage/logo.png"
+          alt="applogo"
+          style="margin-right: 6%"
+        />
+        <img
+          id="navlinks"
+          src="../images/homepage/Home         Categories         Latest         Blog         Pages         Contact.png"
+          alt="navigation links"
+          style="margin-right: 16%"
+        />
+        <img src="../images/homepage/signinfinal.png" alt="signin" />
+      </nav>
+      <div>
+        <img
+          src="../images/homepage/Group 2599.png"
+          class="app-banner"
+          style="margin-top: 16px"
+        />
+      </div>
+    </main>
   </body>
 </html>

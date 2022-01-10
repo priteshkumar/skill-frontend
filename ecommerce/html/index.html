@@ -38,24 +38,69 @@
         margin-left: -8px;
       }
       ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      li {
+        display: inline-block;
+      }
+      ul.shopby-category-list {
         margin-left: 0;
         padding-left: 0;
         margin: 0 auto;
         margin-top: 2vh;
         width: calc(100% - 36px);
       }
-      ul li {
+      ul.shopby-category-list > li {
         display: inline-block;
         width: 32%;
         margin-right: 1%;
       }
-      li img {
+      ul.shopby-category-list > li > img {
         width: 100%;
+      }
+      div.latest-products-div {
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 10vh;
+      }
+      ul.latest-products-list {
+        text-align: center;
+      }
+      li.latest-product-list-item {
+        width: 20%;
+        margin: 8px 8px;
+      }
+      li.latest-product-list-item img {
+        max-width: 100%;
+      }
+      .view-more-products-btn-div {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        margin-top: 4vh;
+      }
+      div.additional-pay-info-div {
+        margin: 0 auto;
+        margin-top: 6vh;
+        text-align: center;
+      }
+      div.pay-info-content {
+        width: 15%;
+        border: 1px solid silver;
+        float: left;
+      }
+
+      div.pay-info-content img {
+        max-width: 100%;
       }
     </style>
   </head>
   <body>
+    <!-- header contains top nav-->
     <header style="background-color: #fd6e00">
+      <!-- top nav with social media icons/search input/
+        other immportant links-->
       <nav>
         <a
           href="https://about.facebook.com/meta/"
@@ -100,6 +145,8 @@
         />
       </nav>
     </header>
+
+    <!-- start of main content -->
     <main style="width: 100%; margin-top: 24px">
       <nav id="appnav">
         <img
@@ -132,6 +179,7 @@
           <img src="../images/homepage/Ellipse 3.png" alt="banner3 selector" />
         </p>
       </div>
+      <!-- shop by category wrapper div-->
       <div class="shopbycategory">
         <img
           src="../images/homepage/sHOP BY CATEGORIES.png"
@@ -139,29 +187,246 @@
           alt="shop by category"
         />
         <div class="category-scroll-div">
+          <!-- left scroller icon-->
           <span class="category-left-scroll"
             ><img
               src="../images/homepage/Path 12355.png"
               alt="category-scoller-left"
             />
           </span>
-          <ul style="list-style-type: none; display: inline-block">
+
+          <!-- shop by category list-->
+          <ul
+            class="shopby-category-list"
+            style="list-style-type: none; display: inline-block"
+          >
+            <!-- each of list item has 
+                <li> will have display:relative;
+            1. category image
+            2. category-tag-div which contains
+                a. <p> having category tag name
+                b. <button> for SHOP NOW
+            category-tag-div will have position absolute
+            to place it on top of category image
+            -->
             <li>
               <img src="../images/homepage/cat1.png" />
+              <div class="category-tag-div">
+                <p>WOMENS</p>
+                <button class=".category-shop-btn">
+                  <span>SHOP NOW</span>
+                </button>
+              </div>
             </li>
             <li>
               <img src="../images/homepage/cat2.png" />
+              <div class="category-tag-div">
+                <p>ETHINIC WEAR</p>
+                <button class=".category-shop-btn">
+                  <span>SHOP NOW</span>
+                </button>
+              </div>
             </li>
             <li style="margin-right: 0">
               <img src="../images/homepage/cat3.png" />
+              <div class="category-tag-div">
+                <p>MENS</p>
+                <button class=".category-shop-btn">
+                  <span>SHOP NOW</span>
+                </button>
+              </div>
             </li>
           </ul>
+          <!-- end of shop by category list-->
+          <!-- category right scroller-->
           <span class="category-right-scroll">
             <img
               src="../images/homepage/Path 12354.png"
               alt="category-scoller-right"
             />
           </span>
+        </div>
+      </div>
+      <!-- end of shopbycategory wrapper div-->
+
+      <!-- start of latest products list-->
+      <div class="latest-products-div">
+        <div class="latest-products-header">
+          <h1>LATEST PRODUCTS</h1>
+          <ul class="latest-products-list-nav">
+            <li>
+              <a href="/allproducts" target="_self" alt="all products">All</a>
+            </li>
+            <li>
+              <a href="/featured" target="_self" alt="featured products"
+                >Featured</a
+              >
+            </li>
+            <li>
+              <a href="/popular" target="_self" alt="popular products"
+                >Popular</a
+              >
+            </li>
+            <li>
+              <a href="/sale" target="_self" alt="sale products">Sale</a>
+            </li>
+            <li>
+              <a href="/bestrated" target="_self" alt="best rated products"
+                >Featured</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="latest-products-list">
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="../images/homepage/product-1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="../images/homepage/product1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="../images/homepage/product-1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="../images/homepage/product-1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="../images/homepage/product-1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="../images/homepage/product-1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12379.png" />
+                <img src="../images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- view more products btn div
+            btn container div is set as flex display for now
+            will be adjusted via css later
+            font sizing/color will adjusted via css later
+            -->
+        <div class="view-more-products-btn-div">
+          <div style="margin-right: 2%">
+            <button class="view-more-normal">VIEW MORE+</button>
+            <p style="color: red">Normal</p>
+          </div>
+          <button class="view-more-overeffect">VIEW MORE+</button
+          >&nbsp;&nbsp;<span style="color: red">Over effect</span>
+        </div>
+      </div>
+      <div class="additional-pay-info-div">
+        <div class="pay-info-content" style="margin-left: 20%">
+          <img src="../images/homepage/Image 34.png" />
+          <p>
+            100% SECURE PAYMENTS<br />
+            secure payments are good<br />
+            do more secure payments
+          </p>
+        </div>
+        <div class="pay-info-content" style="border-left: 0">
+          <img src="../images/homepage/Image 35.png" />
+          <p>
+            100% SECURE PAYMENTS<br />
+            secure payments are good<br />
+            do more secure payments
+          </p>
+        </div>
+        <div class="pay-info-content" style="border-left: 0">
+          <img src="../images/homepage/Image 36.png" />
+          <p>
+            100% SECURE PAYMENTS<br />
+            secure payments are good<br />
+            do more secure payments
+          </p>
+        </div>
+        <div class="pay-info-content" style="border-left: 0">
+          <img src="../images/homepage/Image 37.png" />
+          <p>
+            100% SECURE PAYMENTS<br />
+            secure payments are good<br />
+            do more secure payments
+          </p>
         </div>
       </div>
     </main>

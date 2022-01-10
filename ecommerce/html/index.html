@@ -84,6 +84,7 @@
         margin: 0 auto;
         margin-top: 6vh;
         text-align: center;
+        margin-bottom: 9vh;
       }
       div.pay-info-content {
         width: 15%;
@@ -94,6 +95,24 @@
       div.pay-info-content img {
         max-width: 100%;
       }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      footer.app-footer {
+        text-align: center;
+      }
+      ul.app-info {
+        display: inline-block;
+      }
+      ul.app-info > li {
+        display: block;
+      }
+      .footer-payment-social-div {
+        display: flex;
+        justify-content: space-around;
+      }
     </style>
   </head>
   <body>
@@ -102,24 +121,21 @@
       <!-- top nav with social media icons/search input/
         other immportant links-->
       <nav>
-        <a
-          href="https://about.facebook.com/meta/"
-          alt="facebook"
-          target="_blank"
+        <a href="https://www.facebook.com/" alt="facebook" target="_blank"
           ><img
             src="../images/homepage/facebook round@2x.png"
             width="32px"
             height="32px"
             alt="facebook"
         /></a>
-        <a href="youtube.com" alt="youtube" target="_blank"
+        <a href="https://www.youtube.com/" alt="youtube" target="_blank"
           ><img
             src="../images/homepage/Group 2556@2x.png"
             width="32px"
             height="32px"
             alt="youtube"
         /></a>
-        <a href="twitter.com" alt="twitter" target="_blank"
+        <a href="https://twitter.com/" alt="twitter" target="_blank"
           ><img
             src="../images/homepage/Group 2557@2x.png"
             width="32px"
@@ -395,40 +411,116 @@
           >&nbsp;&nbsp;<span style="color: red">Over effect</span>
         </div>
       </div>
-      <div class="additional-pay-info-div">
-        <div class="pay-info-content" style="margin-left: 20%">
-          <img src="../images/homepage/Image 34.png" />
+    </main>
+    <div class="clearfix additional-pay-info-div">
+      <div class="pay-info-content" style="margin-left: 20%">
+        <img src="../images/homepage/Image 34.png" />
+        <p>
+          100% SECURE PAYMENTS<br />
+          secure payments are good<br />
+          do more secure payments
+        </p>
+      </div>
+      <div class="pay-info-content" style="border-left: 0">
+        <img src="../images/homepage/Image 35.png" />
+        <p>
+          TRUST PAY<br />
+          secure payments are good<br />
+          do more secure payments
+        </p>
+      </div>
+      <div class="pay-info-content" style="border-left: 0">
+        <img src="../images/homepage/Image 36.png" />
+        <p>
+          HELP CENTER<br />
+          secure payments are good<br />
+          do more secure payments
+        </p>
+      </div>
+      <div class="pay-info-content" style="border-left: 0">
+        <img src="../images/homepage/Image 37.png" />
+        <p>
+          SHOP ON THE GO<br />
+          secure payments are good<br />
+          do more secure payments
+        </p>
+      </div>
+    </div>
+    <footer>
+      <ul class="app-info">
+        <li>POLICY INFO</li>
+        <li><a href="/privacypolicy">Privacy Policy</a></li>
+        <li><a href="/termsofsale">Terms of sale</a></li>
+        <li><a href="/termsofuse">Terms of use</a></li>
+        <li><a href="/reportabuse">Report abuse and Takedown Policy</a></li>
+      </ul>
+      <ul class="app-info">
+        <!-- About us Core Values Careers Blog Sitemap-->
+        <li>COMPANY</li>
+        <li><a href="/about us">About us</a></li>
+        <li><a href="/corevalues">Core Values</a></li>
+        <li><a href="/careers">Careers</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/sitemap">Sitemap</a></li>
+      </ul>
+      <ul class="app-info">
+        <!-- Shopping App Sell on Snapdeal Advertise on Snapdeal Media Enquiries Be an Affiliate -->
+        <li>SNAPDEAL BUSINESS</li>
+        <li><a href="/shoppingapp">Shopping App</a></li>
+        <li><a href="/sellonsnapdeal">Sell on Snapdeal</a></li>
+        <li><a href="/advertiseonsnapdeal">Advertise on Snapdeal</a></li>
+        <li><a href="/mediaenquiries">Media Enquiries</a></li>
+        <li><a href="/beaffiliate">Be an Affiliate</a></li>
+      </ul>
+      <!-- FAQ Contact Us Online Shopping-->
+      <ul class="app-info">
+        <li>NEED HELP ?</li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contactus">Contact Us</a></li>
+        <li><a href="/onlineshopping">Online Shopping</a></li>
+      </ul>
+      <ul class="app-info">
+        <li>SUBSCRIBE</li>
+        <li>
+          <form id="footer-subscribe-form">
+            <input type="email" id="subscribemail" name="subscribemail" />
+            <input type="submit" value="SUBMIT" />
+          </form>
+        </li>
+        <li>
           <p>
-            100% SECURE PAYMENTS<br />
-            secure payments are good<br />
-            do more secure payments
+            Register now to get updates on promotions<br />
+            and coupons. Or <a href="/downloadapp">Download App</a>
           </p>
+        </li>
+      </ul>
+      <hr />
+      <div class="footer-payment-social-div">
+        <div class="bottom-payment-div">
+          <h5>PAYMENT</h5>
+          <a href="#"><img src="../images/homepage/Image 38.png" /></a>
+          <a href="#"><img src="../images/homepage/Image 39.png" /></a>
+          <a href="#"><img src="../images/homepage/Image 40.png" /></a>
+          <a href="#"><img src="../images/homepage/Image 41.png" /></a>
+          <a href="#"><img src="../images/homepage/Image 42.png" /></a>
+          <a href="#"><img src="../images/homepage/Image 43.png" /></a>
         </div>
-        <div class="pay-info-content" style="border-left: 0">
-          <img src="../images/homepage/Image 35.png" />
-          <p>
-            100% SECURE PAYMENTS<br />
-            secure payments are good<br />
-            do more secure payments
-          </p>
-        </div>
-        <div class="pay-info-content" style="border-left: 0">
-          <img src="../images/homepage/Image 36.png" />
-          <p>
-            100% SECURE PAYMENTS<br />
-            secure payments are good<br />
-            do more secure payments
-          </p>
-        </div>
-        <div class="pay-info-content" style="border-left: 0">
-          <img src="../images/homepage/Image 37.png" />
-          <p>
-            100% SECURE PAYMENTS<br />
-            secure payments are good<br />
-            do more secure payments
-          </p>
+        <div class="bottom-social-div">
+          <h5>CONNECT</h5>
+          <a href="https://www.facebook.com/"
+            ><img src="../images/homepage/Image 44.png"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="../images/homepage/Image 45.png"
+          /></a>
+          <a href="https://www.youtube.com/"
+            ><img src="../images/homepage/Image 46.png"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="../images/homepage/Image 47.png"
+          /></a>
         </div>
       </div>
-    </main>
+    </footer>
   </body>
 </html>

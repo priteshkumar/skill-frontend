@@ -17,20 +17,32 @@
         padding-top: 10px;
       }
       .app-banner {
-        width: calc(710px + 6% + 16%);
+        width: calc(710px + 22%);
         margin-top: 16px;
       }
       .shopbycategory {
-        width: calc(710px + 6% + 16%);
+        width: calc(710px + 22% + 36px);
         text-align: left;
         margin: 0 auto;
         margin-top: 10vh;
+      }
+      .category-scroll-div {
+        margin-left: -18px;
+        display: flex;
+        align-items: center;
+      }
+      .category-left-scroll {
+        margin-right: 2px;
+      }
+      .category-right-scroll {
+        margin-left: -8px;
       }
       ul {
         margin-left: 0;
         padding-left: 0;
         margin: 0 auto;
         margin-top: 2vh;
+        width: calc(100% - 36px);
       }
       ul li {
         display: inline-block;
@@ -126,15 +138,31 @@
           width="30%"
           alt="shop by category"
         />
-        <ul style="list-style-type: none">
-          <li>
-            <img src="../images/homepage/cat1.png" />
-          </li>
-          <li>
-            <img src="../images/homepage/cat2.png" />
-          </li>
-          <li><img src="../images/homepage/cat3.png" /></li>
-        </ul>
+        <div class="category-scroll-div">
+          <span class="category-left-scroll"
+            ><img
+              src="../images/homepage/Path 12355.png"
+              alt="category-scoller-left"
+            />
+          </span>
+          <ul style="list-style-type: none; display: inline-block">
+            <li>
+              <img src="../images/homepage/cat1.png" />
+            </li>
+            <li>
+              <img src="../images/homepage/cat2.png" />
+            </li>
+            <li style="margin-right: 0">
+              <img src="../images/homepage/cat3.png" />
+            </li>
+          </ul>
+          <span class="category-right-scroll">
+            <img
+              src="../images/homepage/Path 12354.png"
+              alt="category-scoller-right"
+            />
+          </span>
+        </div>
       </div>
     </main>
   </body>

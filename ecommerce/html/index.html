@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce WebApp</title>
+    <!-- Note: css styling/element alignment 
+        has not been fixed.
+        Proper css styling/alignment
+        will be done when css module is completed.
+        below internal css is just for basic styling demo 
+        to be modified later when css module is completed.
+    -->
     <style>
       body {
         margin: 0;
@@ -12,9 +19,22 @@
       }
       header {
         text-align: center;
-        height: 50px;
-        line-height: 50px;
-        padding-top: 10px;
+        height: 40px;
+        line-height: 40px;
+        display: flex;
+        padding: 10px 0px 10px 0px;
+      }
+      header > nav {
+        display: flex;
+        flex: 100%;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .top-morenav {
+        margin-left: 4vw;
+      }
+      .top-morenav-langselect {
+        margin-left: 1vw;
       }
       .app-banner {
         width: calc(710px + 22%);
@@ -125,46 +145,63 @@
       <!-- top nav with social media icons/search input/
         other immportant links-->
       <nav>
-        <a href="https://www.facebook.com/" alt="facebook" target="_blank"
-          ><img
-            src="../images/homepage/facebook round@2x.png"
-            width="32px"
-            height="32px"
-            alt="facebook"
-        /></a>
-        <a href="https://www.youtube.com/" alt="youtube" target="_blank"
-          ><img
-            src="../images/homepage/Group 2556@2x.png"
-            width="32px"
-            height="32px"
-            alt="youtube"
-        /></a>
-        <a href="https://twitter.com/" alt="twitter" target="_blank"
-          ><img
-            src="../images/homepage/Group 2557@2x.png"
-            width="32px"
-            height="32px"
-            alt="twitter"
-            style="margin-right: 1.4%"
-        /></a>
-        <!-- searchbar image is created using image-editor
-        this is for demo.
-        in a working homepage , this will be replaced 
-        by a form search input styled by css.
-        morenavfinal img is also for demo
-        created using image-editor
-        todo : replace morenavfinal img with 
-        list of anchor <a> tags
-        -->
-        <img src="../images/homepage/searchbar.png" />
-        <img src="../images/homepage/morenavfinal.png" alt="morenavlinks" />
-        <img
-          src="../images/homepage/Group 2561.png"
-          alt="toplanguagemenu"
-          style="padding-bottom: 16px"
-        />
+        <!-- social media icons div-->
+        <div class="topsocial-logo-div" style="width: 10%">
+          <a href="https://www.facebook.com/" alt="facebook" target="_blank"
+            ><img
+              src="../images/homepage/facebook round@2x.png"
+              width="32px"
+              height="32px"
+              alt="facebook"
+          /></a>
+          <a href="https://www.youtube.com/" alt="youtube" target="_blank"
+            ><img
+              src="../images/homepage/Group 2556@2x.png"
+              width="32px"
+              height="32px"
+              alt="youtube"
+          /></a>
+          <a href="https://twitter.com/" alt="twitter" target="_blank"
+            ><img
+              src="../images/homepage/Group 2557@2x.png"
+              width="32px"
+              height="32px"
+              alt="twitter"
+              style="margin-right: 1.4%"
+          /></a>
+        </div>
+
+        <!-- search products/brands form-->
+        <form class="topnav-form">
+          <input
+            type="search"
+            id="searchproducts"
+            name="searchproducts"
+            size="50"
+            placeholder="Search Products & Brands"
+          />
+        </form>
+
+        <!-- more navigation links div-->
+        <div class="top-morenav">
+          <img src="../images/homepage/Group 2559.png" />
+          <a href="#" alt="phonecall">+91 9838203708</a>
+          <a href="#" alt="sell on company">Sell on company</a>
+          <a href="#" alt="Download app">Download app</a>
+        </div>
+        <form class="top-morenav-langselect">
+          <label for="countrylang"
+            ><span class="countryflag-container"
+              ><img src="../images/homepage/Group 2560.png" /></span
+          ></label>
+          <select id="countrylang" name="countrylang" size="1">
+            <option value="English">English</option>
+          </select>
+        </form>
       </nav>
+      <!-- end of header nav-->
     </header>
+    <!-- end of header tag-->
 
     <!-- start of main content -->
     <main style="width: 100%; margin-top: 24px">

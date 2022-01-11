@@ -36,9 +36,27 @@
       .top-morenav-langselect {
         margin-left: 1vw;
       }
+      nav.secondary-appnav {
+        width: calc(710px + 22%);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
       .app-banner {
         width: calc(710px + 22%);
         margin-top: 16px;
+      }
+      div.banner-content {
+        position: relative;
+      }
+      div.banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        padding-left: 6%;
       }
       .shopbycategory {
         width: calc(710px + 22% + 36px);
@@ -205,37 +223,57 @@
 
     <!-- start of main content -->
     <main style="width: 100%; margin-top: 24px">
-      <nav id="appnav">
+      <!-- secondary app navigation-->
+      <nav class="secondary-appnav">
         <img
           id="applogo"
           src="../images/homepage/logo.png"
           alt="applogo"
           style="margin-right: 6%"
         />
-        <!-- todo: add unordered list of anchor tags for site navigation
-        instead of default image below -->
-        <img
-          id="navlinks"
-          src="../images/homepage/Home         Categories         Latest         Blog         Pages         Contact.png"
-          alt="navigation links"
-          style="margin-right: 16%"
-        />
-        <img src="../images/homepage/signinfinal.png" alt="signin" />
+        <!-- unordered list of anchor tags for site navigation -->
+        <!-- Home Categories Latest Blog Pages Contact-->
+        <ul>
+          <li><a href="#" alt="Home" target="_self">Home</a></li>
+
+          <!-- to be replaced with a dropdown menu later-->
+          <li><a href="#" alt="Categories" target="_self">Categories</a></li>
+          <li><a href="#" alt="Latest" target="_self">Latest</a></li>
+          <li><a href="#" alt="Blog" target="_self">Blog</a></li>
+          <li><a href="#" alt="Pages" target="_self">Pages</a></li>
+          <li><a href="#" alt="Contact" target="_self">Contact</a></li>
+        </ul>
+        <button class="signin-btn" id="signin">SIGN IN</button>
       </nav>
+      <!-- end of secondary app nav-->
+
       <div class="banner-div">
         <!-- adjust smaller resolution later-->
-        <img
-          class="app-banner"
-          src="../images/homepage/banner2546final1.png"
-          srcset="../images/homepage/banner2546final1.png 2x"
-          alt="app-banner"
-        />
+        <!-- use img srcset to select higher resolution image
+            for devices with pixel density ratio of 2-->
+        <div class="banner-content">
+          <img
+            class="app-banner"
+            src="../images/homepage/Group 2599.png"
+            srcset="../images/homepage/Group 2599@2x.png 2x"
+            width="100%"
+            alt="app-banner"
+          />
+          <div class="banner-text">
+            <h2 style="color: #b4f044">60% discount</h2>
+            <h1 style="color: white">Ethnic</h1>
+            <h1 style="color: white">Collection</h1>
+            <h2 style="color: #b4f044">Best Cloth Collection of 2020!</h2>
+            <button class="shop-now-lg">SHOP NOW</button>
+          </div>
+        </div>
         <p>
           <img src="../images/homepage/Path 12358.png" alt="banner1 selector" />
           <img src="../images/homepage/Ellipse 3.png" alt="banner2 selector" />
           <img src="../images/homepage/Ellipse 3.png" alt="banner3 selector" />
         </p>
       </div>
+
       <!-- shop by category wrapper div-->
       <div class="shopbycategory">
         <img

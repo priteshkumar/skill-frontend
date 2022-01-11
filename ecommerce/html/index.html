@@ -11,6 +11,9 @@
         will be done when css module is completed.
         below internal css is just for basic styling demo 
         to be modified later when css module is completed.
+
+        TO DO LATER : add overeffect icon list on 
+        latest product list item
     -->
     <style>
       body {
@@ -101,12 +104,19 @@
         text-align: left;
         margin: 0 auto;
         margin-top: 10vh;
+        width: calc(710px + 22%);
+      }
+
+      div.latest-products-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
       ul.latest-products-list {
         text-align: center;
       }
       li.latest-product-list-item {
-        width: 20%;
+        width: 30%;
         margin: 8px 8px;
       }
       li.latest-product-list-item img {
@@ -407,6 +417,13 @@
               </div>
             </div>
           </li>
+          <!-- latest product list item 
+            wraps latest-product-content
+            latest-product-content: wraps product image/pricing
+            TO DO LATER  : aded overlay effect 
+            with a list of icons displayed on top
+            for over effect.
+            -->
           <li class="latest-product-list-item">
             <div
               class="latest-product-content"
@@ -491,6 +508,7 @@
         </div>
       </div>
     </main>
+    <!-- additional payment info div-->
     <div class="clearfix additional-pay-info-div">
       <div class="pay-info-content" style="margin-left: 20%">
         <img src="../images/homepage/Image 34.png" />
@@ -525,6 +543,7 @@
         </p>
       </div>
     </div>
+    <!-- start of footer -->
     <footer class="app-footer">
       <ul class="app-info">
         <li>POLICY INFO</li>

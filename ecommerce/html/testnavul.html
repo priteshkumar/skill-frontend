@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      text-align: center;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      height: 40px;
+      display: flex;
+      margin: 0;
+      padding: 10px 0px 10px 0px;
+    }
+    header > nav {
+      display: flex;
+      flex: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    ul.topsocial-logo-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 4vw;
+    }
+    ul.topsocial-logo-div > li {
+      display: inline-block;
+      margin-right: 4px;
+    }
+
+    form.topnav-form > input {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 16px;
+      border: 0;
+    }
+    ul.top-morenav {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      margin-left: 4vw;
+    }
+    ul.top-morenav > li {
+      margin-right: 10px;
+    }
+    .top-morenav-langselect {
+      margin-left: 1vw;
+    }
+  </style>
+  <body>
+    <header id="app-header" style="background-color: #fd6e00">
+      <!-- top nav with social media icons/search input/
+          other immportant links-->
+      <nav>
+        <!-- social media icons div-->
+        <ul class="topsocial-logo-div">
+          <li>
+            <a href="https://www.facebook.com/" alt="facebook" target="_blank"
+              ><img
+                src="../images/homepage/facebook round@2x.png"
+                width="32px"
+                height="32px"
+                alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/" alt="youtube" target="_blank"
+              ><img
+                src="../images/homepage/Group 2556@2x.png"
+                width="32px"
+                height="32px"
+                alt="youtube"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" alt="twitter" target="_blank"
+              ><img
+                src="../images/homepage/Group 2557@2x.png"
+                width="32px"
+                height="32px"
+                alt="twitter"
+                style="margin-right: 1.4%"
+            /></a>
+          </li>
+        </ul>
+        <!-- search products/brands form-->
+        <form class="topnav-form">
+          <input
+            type="search"
+            id="searchproducts"
+            name="searchproducts"
+            size="50"
+            placeholder="Search Products & Brands"
+          />
+        </form>
+
+        <!-- more navigation links div-->
+        <ul class="top-morenav">
+          <li><img src="../images/homepage/Group 2559.png" /></li>
+          <li><a href="#" alt="phonecall">+91 9838203708</a></li>
+          <li><a href="#" alt="sell on company">Sell on company</a></li>
+          <li><a href="#" alt="Download app">Download app</a></li>
+        </ul>
+        <form class="top-morenav-langselect">
+          <label for="countrylang"
+            ><span class="countryflag-container"
+              ><img src="../images/homepage/Group 2560.png" /></span
+          ></label>
+          <select id="countrylang" name="countrylang" size="1">
+            <option value="English">English</option>
+          </select>
+        </form>
+      </nav>
+      <!-- end of header nav-->
+    </header>
+    <!-- end of header tag-->
+    <!--<div class="nav-div">
+      <img src="../images/homepage/Group 2559.png" />
+      <a href="#">+91938203438</a>
+      <a href="#">Sell on company</a>
+      <a href="#">Download app</a>
+    </div>-->
+  </body>
+</html>

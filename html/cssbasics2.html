@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rosario&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation"
+    />
+    <title>Document</title>
+    <style>
+      /* CSS comments example 
+         CSS properties
+         
+         background-color
+         color
+         font-family
+         font-size
+         border
+         opacity
+         font-weight
+         */
+
+      /* use of web safe fonts compatible with any OS */
+      html {
+        font-size: 16px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f3f8ff;
+        font-family: "Rosario", sans-serif;
+        font-size: 100%;
+      }
+      h1 {
+        margin: 0;
+      }
+      header,
+      h1,
+      h2,
+      p {
+        text-align: center;
+      }
+      header {
+        background-color: #e8d3ff;
+        height: 60px;
+        line-height: 60px;
+        font-family: "Rancho", sans-serif;
+      }
+      h1 {
+        font-size: 3em;
+        color: skyblue;
+      }
+      section {
+        margin-top: 4vh;
+        background-color: #f3f8ff;
+        text-align: center;
+      }
+      article {
+        background-color: #deecff;
+        width: 30%;
+        margin: 0 auto;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 4vh;
+      }
+
+      article.bckimage {
+        background-image: url("../images/favorite-1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100px 100px;
+        background-position: right top;
+        height: 300px;
+      }
+
+      /* em units is relative to parent element's font-size */
+      .ems {
+        font-size: 1.3em;
+      }
+      /* rem units is relative to root element's font-size */
+      .rems {
+        font-size: 1.3rem;
+      }
+      ul {
+        text-align: left;
+      }
+      small {
+        background-color: bisque;
+      }
+
+      div.pagination {
+        display: flex;
+        width: 10%;
+        margin: 0 auto;
+        margin-top: 4vh;
+        text-align: center;
+        margin-bottom: 2vh;
+      }
+
+      div.pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border: 1px solid #ddd;
+      }
+
+      div.pagination a.active {
+        background-color: #4caf50;
+        color: white;
+        border: 1px solid #4caf50;
+      }
+
+      div.pagination a:hover:not(.active) {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="font-effect-fire-animation">
+      <h1>CSS INTRO</h1>
+    </header>
+    <body>
+      <main>
+        <div class="pagination">
+          <a href="cssbasics.html">❮</a>
+          <a href="#" target="_self">❯</a>
+        </div>
+        <section>
+          <article class="bckimage">
+            <h2>Background-image RIGHT-TOP</h2>
+            <p>
+              Here background image is placed on right top<br />
+              This is enabled by using <br /><br />
+              <code
+                ><strong style="font-size: larger"
+                  >background-size:100px 100px</strong
+                ><br />
+                <strong style="font-size: larger"
+                  >background-position:right top</strong
+                ></code
+              >
+              css property
+            </p>
+          </article>
+        </section>
+      </main>
+    </body>
+  </body>
+</html>

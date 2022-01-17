@@ -71,28 +71,24 @@
         padding-bottom: 8px;
         margin-top: 4vh;
       }
-
       article.bckimage {
         background-image: url("../images/favorite-1.jpg");
-        background-repeat: no-repeat;
-        background-size: 100px 100px;
         background-position: right top;
-        height: 300px;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        height: 400px;
       }
 
-      /* em units is relative to parent element's font-size */
-      .ems {
-        font-size: 1.3em;
-      }
-      /* rem units is relative to root element's font-size */
-      .rems {
-        font-size: 1.3rem;
-      }
-      ul {
-        text-align: left;
-      }
-      small {
-        background-color: bisque;
+      article.backimgs {
+        background: url("../images/favorite-1.jpg") left top no-repeat,
+          url("../images/favorite-2.jpg") right top no-repeat,
+          url("../images/freel-peak.jpg") center no-repeat,
+          url("../images/favorite-3.jpg") right bottom no-repeat,
+          url("../images/favorite-4.jpg") left bottom no-repeat;
+        background-size: 100px, 100px, 200px, 100px, 100px;
+        height: 400px;
+        background-color: #deecff;
+        margin-bottom: 4vh;
       }
 
       div.pagination {
@@ -151,6 +147,7 @@
               css property
             </p>
           </article>
+          <article class="backimgs"></article>
         </section>
       </main>
     </body>

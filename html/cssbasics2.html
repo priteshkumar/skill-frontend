@@ -59,9 +59,12 @@
         color: skyblue;
       }
       section {
+        margin: 0 auto;
         margin-top: 4vh;
         background-color: #f3f8ff;
-        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
       }
       article {
         background-color: #deecff;
@@ -85,10 +88,17 @@
           url("../images/freel-peak.jpg") center no-repeat,
           url("../images/favorite-3.jpg") right bottom no-repeat,
           url("../images/favorite-4.jpg") left bottom no-repeat;
-        background-size: 100px, 100px, 200px, 100px, 100px;
+        background-size: 100px, 100px, 100px, 100px, 100px;
         height: 400px;
         background-color: #deecff;
         margin-bottom: 4vh;
+      }
+      article.centertwenty {
+        background-image: url("../images/favorite-1.jpg");
+        background-position: center 20%;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        height: 400px;
       }
 
       div.pagination {
@@ -147,7 +157,16 @@
               css property
             </p>
           </article>
-          <article class="backimgs"></article>
+          <article class="backimgs">
+            <p>
+              background images<br />
+              left top<br />
+              right top<br />
+              right bottom<br />
+              left bottom
+            </p>
+          </article>
+          <article class="centertwenty"></article>
         </section>
       </main>
     </body>

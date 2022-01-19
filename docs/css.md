@@ -33,4 +33,16 @@ if you set an element's font-size as a percentage,
   background: url(img_tree.gif) left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
   background-size: 50px, 130px, auto;
   }
-  ```
+
+```
+
+
+### For full background-image use html tag
+
+```
+html { 
+  background: url(img_man.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+```

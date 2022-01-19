@@ -53,6 +53,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 
 https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator
+
 >box-shadow is defined in terms of : x-offset,y-offset,blur radius,spread radius
 
 > The more the blur radius value , the shadow will become more lighter

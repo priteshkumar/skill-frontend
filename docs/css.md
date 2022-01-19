@@ -61,4 +61,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box
 
 > Increasing spread radius increases the area covered by shadow.
 
-> 
+
+### selectors
+
+### pseudo classes/elements
+
+> A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). 
+
+> For example, ::first-line can be used to change the font of the first line of a paragraph.

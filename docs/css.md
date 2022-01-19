@@ -46,3 +46,17 @@ html {
 }
 
 ```
+
+### Box-shadow
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+
+https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+
+>box-shadow is defined in terms of : x-offset,y-offset,blur radius,spread radius
+
+> The more the blur radius value , the shadow will become more lighter
+
+> Increasing spread radius increases the area covered by shadow.
+
+> 

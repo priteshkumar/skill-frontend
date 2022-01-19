@@ -25,3 +25,12 @@ if you set an element's font-size as a percentage,
  ```
  
  https://web.dev/learn/css/sizing/
+
+### background/background-image
+
+```
+#example1 {
+  background: url(img_tree.gif) left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+  background-size: 50px, 130px, auto;
+  }
+  ```

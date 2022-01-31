@@ -66,6 +66,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box
 
 ### pseudo classes/elements
 
+> css pseudo class is used to style/define the specific state of an element.
+
+```
+tr:first-child{
+ color:blue;
+}
+```
+
 > A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). 
 
 > For example, ::first-line can be used to change the font of the first line of a paragraph.

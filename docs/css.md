@@ -77,3 +77,16 @@ tr:first-child{
 > A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). 
 
 > For example, ::first-line can be used to change the font of the first line of a paragraph.
+
+
+### Box model
+
+> https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#aside_inner_and_outer_display_types
+
+> everything in css has a box around it. 
+
+> Boxess have outer display type and inner display type.
+
+> Outer display type takes up values as **block** or **inline**
+
+> Inner display type determines layout of elements inside the box. inner display type can be : flex , inline-flex,grid

@@ -99,3 +99,18 @@ https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-pract
 **Using display inline-block for li span elements**
 
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#using_display_inline-block
+
+**Margins/Padding**
+
+> Below example shows using padding in em units, which is relative to element's own font-size
+
+```
+div.box{
+font-size:2em;
+padding:1em;
+}
+
+```
+> Here padding becomes = 2em = 2*16 = 32px;
+
+https://codepen.io/mavpks/pen/yLPPbYM

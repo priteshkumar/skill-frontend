@@ -90,3 +90,8 @@ tr:first-child{
 > Outer display type takes up values as **block** or **inline**
 
 > Inner display type determines layout of elements inside the box. inner display type can be : flex , inline-flex,grid
+
+
+**Box-sizing switch to border-box**
+
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        position: relative;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: #b0c4de;
+      }
+      article {
+        margin: 0 auto;
+        text-align: center;
+        background-color: lightsteelblue;
+        border: 1px solid;
+        width: 400px;
+        margin-top: 6vh;
+      }
+      div.box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 400px;
+        height: 400px;
+        background-color: lightskyblue;
+        background-image: url("../../images/snow-leopard.jpg");
+        background-repeat: no-repeat;
+        background-size: 400px 400px;
+        background-position: center center;
+        padding: 10px;
+        border: 10px solid white;
+        margin: 10px;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h3>box model demo(uses default content-box)</h3>
+      <p>padding of 10px around content</p>
+      <p>border of 10px around padding</p>
+      <p>margin of 10px around div box</p>
+    </article>
+    <div class="box"></div>
+  </body>
+</html>

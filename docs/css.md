@@ -95,3 +95,7 @@ tr:first-child{
 **Box-sizing switch to border-box**
 
 https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
+**Using display inline-block for li span elements**
+
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#using_display_inline-block

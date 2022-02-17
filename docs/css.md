@@ -120,3 +120,5 @@ https://codepen.io/mavpks/pen/yLPPbYM
 
  pseudoclass tend to act as if you had applied a class to some part of your document,
  often helping you cut down on excess classes in your markup, and giving you **more flexible, maintainable code**.
+
+> A **pseudo-element** is like adding or targeting an extra element via css without having to add more HTML.

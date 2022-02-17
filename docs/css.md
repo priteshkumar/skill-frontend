@@ -123,4 +123,4 @@ https://codepen.io/mavpks/pen/yLPPbYM
 
 > A **pseudo-element** is like adding or targeting an extra element via css without having to add more HTML.
 
-> While DevTools may show pseudo-elements in the Elements panel, pseudo-elements won't be found in the HTML, they're owned by the browser.
+> **While DevTools may show pseudo-elements in the Elements panel, pseudo-elements won't be found in the HTML, they're owned by the browser.**

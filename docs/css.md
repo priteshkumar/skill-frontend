@@ -114,3 +114,9 @@ padding:1em;
 > Here padding becomes = 2em = 2*16 = 32px;
 
 https://codepen.io/mavpks/pen/yLPPbYM
+
+
+**pseudoclass/pseudoelements**
+
+ pseudoclass tend to act as if you had applied a class to some part of your document,
+ often helping you cut down on excess classes in your markup, and giving you **more flexible, maintainable code**.

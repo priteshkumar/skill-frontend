@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div.gallery {
+        width: 80%;
+        margin: 0 auto;
+        background-color: lavender;
+        text-align: center;
+        padding: 2em;
+      }
+      div.image {
+        /*display: inline-block;*/
+        width: 25%;
+        border: 5px solid silver;
+      }
+      div.gallery * + * {
+        margin-top: 1em;
+      }
+      /*div.gallery div.image:nth-child(3) {
+        margin-left: 0px;
+      }
+      div.gallery div.image {
+        margin-bottom: 1em;
+      }*/
+      div.image img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="gallery">
+        <div class="image">
+          <img src="../../images/favorite-1.jpg" />
+        </div>
+        <div class="image">
+          <img src="../../images/favorite-2.jpg" />
+        </div>
+        <div class="image">
+          <img src="../../images/favorite-3.jpg" />
+        </div>
+        <div class="image">
+          <img src="../../images/favorite-4.jpg" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

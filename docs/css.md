@@ -123,4 +123,21 @@ https://codepen.io/mavpks/pen/yLPPbYM
 
 > A **pseudo-element** is like adding or targeting an extra element via css without having to add more HTML.
 
+> Content property: https://developer.mozilla.org/en-US/docs/Web/CSS/content 
+
 > **While DevTools may show pseudo-elements in the Elements panel, pseudo-elements won't be found in the HTML, they're owned by the browser.**
+
+> Use values from https://unicodelookup.com/ for inserting special characters/emojis into pseudoelement's content
+
+```
+p::after{
+ content: " \27A5"; //hex value for ➥	heavy black curved downwards and rightwards arrow
+}
+```
+
+codepen pseudoelement example
+https://codepen.io/mavpks/pen/BamJZXY
+
+**pseudoelement ::after can be used to create tooltips as in below example**
+
+https://codepen.io/mavpks/pen/NWwyqJN

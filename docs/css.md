@@ -132,3 +132,6 @@ p::after{
  content: " \27A5"; //hex value for ➥	heavy black curved downwards and rightwards arrow
 }
 ```
+
+codepen pseudoelement example
+https://codepen.io/mavpks/pen/BamJZXY

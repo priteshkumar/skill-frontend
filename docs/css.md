@@ -137,3 +137,7 @@ p::after{
 
 codepen pseudoelement example
 https://codepen.io/mavpks/pen/BamJZXY
+
+> pseudoelement ::after can be used to create tooltips as in below example
+
+https://codepen.io/mavpks/pen/NWwyqJN

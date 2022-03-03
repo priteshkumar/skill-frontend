@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div:first-child {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      div:nth-child(2) {
+        width: 200px;
+        height: 200px;
+        background-color: lightgreen;
+        text-align: center;
+      }
+      /*span inside second div have display:block
+      <span> inherits text-align:center from 
+        parent div , however 
+        due to fixed width of 100px
+        they start from left edge of parent div
+
+        so , margin:auto is needed 
+        to center the span inside parent div
+      */
+      div:nth-child(2) span {
+        display: block;
+        width: 100px;
+        background-color: lightcoral;
+        margin: auto;
+        margin-bottom: 5px;
+      }
+      div:nth-child(3) {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        text-align: center;
+      }
+      /* span have inline-block display
+      so margin: auto is not needed */
+
+      div:nth-child(3) span {
+        display: inline-block;
+        width: 100px;
+        background-color: lightcoral;
+        margin-bottom: 5px;
+      }
+      p {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>first div</div>
+    <div>
+      <span>info</span>
+      <span>more info</span>
+      <p>second div</p>
+    </div>
+    <div>
+      <span>info</span>
+      <span>more info</span>
+      <p>third div</p>
+    </div>
+  </body>
+</html>

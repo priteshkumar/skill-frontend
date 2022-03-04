@@ -141,3 +141,11 @@ https://codepen.io/mavpks/pen/BamJZXY
 **pseudoelement ::after can be used to create tooltips as in below example**
 
 https://codepen.io/mavpks/pen/NWwyqJN
+
+### CSS POSITIONING
+
+> body element has default margin of 8px.
+
+> body element's position is default **static**.
+
+http://phrogz.net/css/htmlvsbody.html

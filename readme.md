@@ -1,4 +1,4 @@
-## keyboard shortcuts
+## vscode keyboard shortcuts
 
 | VScode command | keyboard shortcut |
 | -------------- |  ------|

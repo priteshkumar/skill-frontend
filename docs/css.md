@@ -115,6 +115,9 @@ padding:1em;
 
 https://codepen.io/mavpks/pen/yLPPbYM
 
+> **read below as margins/padding in percentage are calculated from width of parent block**
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block
 
 **pseudoclass/pseudoelements**
 
@@ -141,3 +144,11 @@ https://codepen.io/mavpks/pen/BamJZXY
 **pseudoelement ::after can be used to create tooltips as in below example**
 
 https://codepen.io/mavpks/pen/NWwyqJN
+
+### CSS POSITIONING
+
+> body element has default margin of 8px.
+
+> body element's position is default **static**.
+
+http://phrogz.net/css/htmlvsbody.html

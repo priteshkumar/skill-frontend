@@ -152,3 +152,9 @@ https://codepen.io/mavpks/pen/NWwyqJN
 > body element's position is default **static**.
 
 http://phrogz.net/css/htmlvsbody.html
+
+### Z-index
+
+> positioned elements later in the source order win over positioned elements earlier in the source order.
+
+https://github.com/mdn/learning-area/blob/main/css/css-layout/positioning/5_z-index.html

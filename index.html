@@ -4,71 +4,631 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ecommerce WebApp</title>
+    <!-- Note: css styling/element alignment 
+        has not been fixed.
+        Proper css styling/alignment
+        will be done when css module is completed.
+        below internal css is just for basic styling demo 
+        to be modified later when css module is completed.
+
+        TO DO LATER : add overeffect icon list on 
+        latest product list item
+    -->
     <style>
       body {
-        background: url(./images/nyr.gif);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        border: 1px solid black;
         margin: 0;
-        height: 100vh;
-      }
-      .neon {
-        color: #fff;
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff,
-          0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
-      }
-      .mplayer {
-        padding-top: 50px;
-        width: 24%;
-        margin: 0 auto;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-        border: none;
-        opacity: 0.7;
+        text-align: center;
       }
       header {
-        background-color: black;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        display: flex;
+        padding: 10px 0px 10px 0px;
+      }
+      header > nav {
+        display: flex;
+        flex: 100%;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .top-morenav {
+        margin-left: 4vw;
+      }
+      .top-morenav-langselect {
+        margin-left: 1vw;
+      }
+      nav.secondary-appnav {
+        width: calc(710px + 22%);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .app-banner {
+        width: calc(710px + 22%);
+        margin-top: 16px;
+      }
+      div.banner-content {
+        position: relative;
+      }
+      div.banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: left;
-        height: 70px;
-        line-height: 70px;
+        padding-left: 6%;
+      }
+      .shopbycategory {
+        width: calc(710px + 22% + 36px);
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 10vh;
+      }
+      .category-scroll-div {
+        margin-left: -18px;
         display: flex;
         align-items: center;
       }
-      .logo {
-        width: 40px;
-        height: 40px;
-        margin-left: 30px;
-        margin-right: 10px;
+      .category-left-scroll {
+        margin-right: 2px;
       }
-      h1 {
-        margin: 0;
-        padding: 0;
+      .category-right-scroll {
+        margin-left: -8px;
       }
-      audio {
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      li {
+        display: inline-block;
+      }
+      ul.shopby-category-list {
+        margin-left: 0;
+        padding-left: 0;
+        margin: 0 auto;
+        margin-top: 2vh;
+        width: calc(100% - 36px);
+      }
+      ul.shopby-category-list > li {
+        display: inline-block;
+        width: 32%;
+        margin-right: 1%;
+      }
+      ul.shopby-category-list > li > img {
         width: 100%;
-        opacity: 0.5;
+      }
+      div.latest-products-div {
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 10vh;
+        width: calc(710px + 22%);
+      }
+
+      div.latest-products-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      ul.latest-products-list {
+        text-align: center;
+      }
+      li.latest-product-list-item {
+        width: 30%;
+        margin: 8px 8px;
+      }
+      li.latest-product-list-item img {
+        max-width: 100%;
+      }
+      .view-more-products-btn-div {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        margin-top: 4vh;
+      }
+      div.additional-pay-info-div {
+        margin: 0 auto;
+        margin-top: 6vh;
+        text-align: center;
+        margin-bottom: 9vh;
+      }
+      div.pay-info-content {
+        width: 15%;
+        border: 1px solid silver;
+        float: left;
+      }
+
+      div.pay-info-content img {
+        max-width: 100%;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      footer.app-footer {
+        text-align: center;
+        position: relative;
+      }
+      ul.app-info {
+        display: inline-block;
+      }
+      ul.app-info > li {
+        display: block;
+      }
+      .footer-payment-social-div {
+        display: flex;
+        justify-content: space-around;
+      }
+      .footer-arrow {
+        position: absolute;
       }
     </style>
   </head>
   <body>
-    <header>
-      <img class="logo" src="./images/music-icon.svg" />
-      <h1 class="neon">DoYouRock.<span style="font-size: 0.6em">com</span></h1>
+    <!-- header contains top nav-->
+    <header id="app-header" style="background-color: #fd6e00">
+      <!-- top nav with social media icons/search input/
+        other immportant links-->
+      <nav>
+        <!-- social media icons div-->
+        <div class="topsocial-logo-div" style="width: 10%">
+          <a href="https://www.facebook.com/" alt="facebook" target="_blank"
+            ><img
+              src="./ecommerce/images/homepage/facebook round@2x.png"
+              width="32px"
+              height="32px"
+              alt="facebook"
+          /></a>
+          <a href="https://www.youtube.com/" alt="youtube" target="_blank"
+            ><img
+              src="./ecommerce/images/homepage/Group 2556@2x.png"
+              width="32px"
+              height="32px"
+              alt="youtube"
+          /></a>
+          <a href="https://twitter.com/" alt="twitter" target="_blank"
+            ><img
+              src="./ecommerce/images/homepage/Group 2557@2x.png"
+              width="32px"
+              height="32px"
+              alt="twitter"
+              style="margin-right: 1.4%"
+          /></a>
+        </div>
+
+        <!-- search products/brands form-->
+        <form class="topnav-form">
+          <input
+            type="search"
+            id="searchproducts"
+            name="searchproducts"
+            size="50"
+            placeholder="Search Products & Brands"
+          />
+        </form>
+
+        <!-- more navigation links div-->
+        <div class="top-morenav">
+          <img src="./ecommerce/images/homepage/Group 2559.png" />
+          <a href="#" alt="phonecall">+91 9838203708</a>
+          <a href="#" alt="sell on company">Sell on company</a>
+          <a href="#" alt="Download app">Download app</a>
+        </div>
+        <form class="top-morenav-langselect">
+          <label for="countrylang"
+            ><span class="countryflag-container"
+              ><img src="./ecommerce/images/homepage/Group 2560.png" /></span
+          ></label>
+          <select id="countrylang" name="countrylang" size="1">
+            <option value="English">English</option>
+          </select>
+        </form>
+      </nav>
+      <!-- end of header nav-->
     </header>
-    <div class="mplayer">
-      <img src="./images/icon.png" alt="mplayer icon" />
-      <audio controls>
-        <source src="./audio/electro.mp3" type="audio/mp3" />
+    <!-- end of header tag-->
+
+    <!-- start of main content -->
+    <main style="width: 100%; margin-top: 24px">
+      <!-- secondary app navigation-->
+      <nav class="secondary-appnav">
+        <img
+          id="applogo"
+          src="./ecommerce/images/homepage/logo.png"
+          alt="applogo"
+          style="margin-right: 6%"
+        />
+        <!-- unordered list of anchor tags for site navigation -->
+        <!-- Home Categories Latest Blog Pages Contact-->
+        <ul>
+          <li><a href="#" alt="Home" target="_self">Home</a></li>
+
+          <!-- to be replaced with a dropdown menu later-->
+          <li><a href="#" alt="Categories" target="_self">Categories</a></li>
+          <li><a href="#" alt="Latest" target="_self">Latest</a></li>
+          <li><a href="#" alt="Blog" target="_self">Blog</a></li>
+          <li><a href="#" alt="Pages" target="_self">Pages</a></li>
+          <li><a href="#" alt="Contact" target="_self">Contact</a></li>
+        </ul>
+        <button class="signin-btn" id="signin">SIGN IN</button>
+      </nav>
+      <!-- end of secondary app nav-->
+
+      <div class="banner-div">
+        <!-- adjust smaller resolution later-->
+        <!-- use img srcset to select higher resolution image
+            for devices with pixel density ratio of 2-->
+        <div class="banner-content">
+          <img
+            class="app-banner"
+            src="./ecommerce/images/homepage/ecommer-banner.jpeg"
+            srcset="./ecommerce/images/homepage/ecommer-banner.jpeg 2x"
+            width="100%"
+            alt="app-banner"
+          />
+          <div class="banner-text">
+            <h2 style="color: #b4f044">60% discount</h2>
+            <h1 style="color: white">Ethnic</h1>
+            <h1 style="color: white">Collection</h1>
+            <h2 style="color: #b4f044">Best Cloth Collection of 2020!</h2>
+            <button class="shop-now-lg">SHOP NOW</button>
+          </div>
+        </div>
         <p>
-          Your browser doesn't support HTML5 audio. Here is a
-          <a href="viper.mp3">link to the audio</a> instead.
+          <img src="./ecommerce/images/homepage/Path 12358.png" alt="banner1 selector" />
+          <img src="./ecommerce/images/homepage/Ellipse 3.png" alt="banner2 selector" />
+          <img src="./ecommerce/images/homepage/Ellipse 3.png" alt="banner3 selector" />
         </p>
-      </audio>
+      </div>
+
+      <!-- shop by category wrapper div-->
+      <div class="shopbycategory">
+        <img
+          src="./ecommerce/images/homepage/sHOP BY CATEGORIES.png"
+          width="30%"
+          alt="shop by category"
+        />
+        <div class="category-scroll-div">
+          <!-- left scroller icon-->
+          <span class="category-left-scroll"
+            ><img
+              src="./ecommerce/images/homepage/Path 12355.png"
+              alt="category-scoller-left"
+            />
+          </span>
+
+          <!-- shop by category list-->
+          <ul
+            class="shopby-category-list"
+            style="list-style-type: none; display: inline-block"
+          >
+            <!-- each of list item has 
+                <li> will have display:relative;
+            1. category image
+            2. category-tag-div which contains
+                a. <p> having category tag name
+                b. <button> for SHOP NOW
+            category-tag-div will have position absolute
+            to place it on top of category image
+            -->
+            <li>
+              <img src="./ecommerce/images/homepage/cat1.png" />
+              <div class="category-tag-div">
+                <p>WOMENS</p>
+                <button class=".category-shop-btn">
+                  <span>SHOP NOW</span>
+                </button>
+              </div>
+            </li>
+            <li>
+              <img src="./ecommerce/images/homepage/cat2.png" />
+              <div class="category-tag-div">
+                <p>ETHINIC WEAR</p>
+                <button class=".category-shop-btn">
+                  <span>SHOP NOW</span>
+                </button>
+              </div>
+            </li>
+            <li style="margin-right: 0">
+              <img src="./ecommerce/images/homepage/cat3.png" />
+              <div class="category-tag-div">
+                <p>MENS</p>
+                <button class=".category-shop-btn">
+                  <span>SHOP NOW</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <!-- end of shop by category list-->
+          <!-- category right scroller-->
+          <span class="category-right-scroll">
+            <img
+              src="./ecommerce/images/homepage/Path 12354.png"
+              alt="category-scoller-right"
+            />
+          </span>
+        </div>
+      </div>
+      <!-- end of shopbycategory wrapper div-->
+
+      <!-- start of latest products list-->
+      <div class="latest-products-div">
+        <div class="latest-products-header">
+          <h1>LATEST PRODUCTS</h1>
+          <ul class="latest-products-list-nav">
+            <li>
+              <a href="/allproducts" target="_self" alt="all products">All</a>
+            </li>
+            <li>
+              <a href="/featured" target="_self" alt="featured products"
+                >Featured</a
+              >
+            </li>
+            <li>
+              <a href="/popular" target="_self" alt="popular products"
+                >Popular</a
+              >
+            </li>
+            <li>
+              <a href="/sale" target="_self" alt="sale products">Sale</a>
+            </li>
+            <li>
+              <a href="/bestrated" target="_self" alt="best rated products"
+                >Featured</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="latest-products-list">
+          <!-- latest product list item 
+            wraps latest-product-content div
+            latest-product-content: wraps product image/pricing/stars
+            
+            TO DO LATER  : 
+            1. wrap <img> inside <a> tag to route
+                user to product details page
+
+            2. aded overlay effect 
+            with a list of icons displayed on top
+            for over effect.
+            -->
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="./ecommerce/images/homepage/product-1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="./ecommerce/images/homepage/product1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="./ecommerce/images/homepage/product-1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="./ecommerce/images/homepage/product-1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="./ecommerce/images/homepage/product-1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+          <li class="latest-product-list-item">
+            <div
+              class="latest-product-content"
+              style="border: 1px solid silver; text-align: center"
+            >
+              <img src="./ecommerce/images/homepage/product-1.png" alt="product 1" />
+              <p>Dummy Text Lorel</p>
+              <p>Rs 1099.0 <del>Rs 2748.0</del> (60% off)</p>
+              <div>
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12379.png" />
+                <img src="./ecommerce/images/homepage/Path 12382.png" />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- view more products btn div
+            btn container div is set as flex display for now
+            will be adjusted via css later
+            font sizing/color will adjusted via css later
+            -->
+        <div class="view-more-products-btn-div">
+          <div style="margin-right: 2%">
+            <button class="view-more-normal">VIEW MORE+</button>
+            <p style="color: red">Normal</p>
+          </div>
+          <button class="view-more-overeffect">VIEW MORE+</button
+          >&nbsp;&nbsp;<span style="color: red">Over effect</span>
+        </div>
+      </div>
+    </main>
+    <!-- additional payment info div-->
+    <div class="clearfix additional-pay-info-div">
+      <div class="pay-info-content" style="margin-left: 20%">
+        <img src="./ecommerce/images/homepage/Image 34.png" />
+        <p>
+          100% SECURE PAYMENTS<br />
+          secure payments are good<br />
+          do more secure payments
+        </p>
+      </div>
+      <div class="pay-info-content" style="border-left: 0">
+        <img src="./ecommerce/images/homepage/Image 35.png" />
+        <p>
+          TRUST PAY<br />
+          secure payments are good<br />
+          do more secure payments
+        </p>
+      </div>
+      <div class="pay-info-content" style="border-left: 0">
+        <img src="./ecommerce/images/homepage/Image 36.png" />
+        <p>
+          HELP CENTER<br />
+          secure payments are good<br />
+          do more secure payments
+        </p>
+      </div>
+      <div class="pay-info-content" style="border-left: 0">
+        <img src="./ecommerce/images/homepage/Image 37.png" />
+        <p>
+          SHOP ON THE GO<br />
+          secure payments are good<br />
+          do more secure payments
+        </p>
+      </div>
     </div>
+    <!-- start of footer -->
+    <footer class="app-footer">
+      <ul class="app-info">
+        <li>POLICY INFO</li>
+        <li><a href="/privacypolicy">Privacy Policy</a></li>
+        <li><a href="/termsofsale">Terms of sale</a></li>
+        <li><a href="/termsofuse">Terms of use</a></li>
+        <li><a href="/reportabuse">Report abuse and Takedown Policy</a></li>
+      </ul>
+      <ul class="app-info">
+        <!-- About us Core Values Careers Blog Sitemap-->
+        <li>COMPANY</li>
+        <li><a href="/about us">About us</a></li>
+        <li><a href="/corevalues">Core Values</a></li>
+        <li><a href="/careers">Careers</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/sitemap">Sitemap</a></li>
+      </ul>
+      <ul class="app-info">
+        <!-- Shopping App Sell on Snapdeal Advertise on Snapdeal Media Enquiries Be an Affiliate -->
+        <li>SNAPDEAL BUSINESS</li>
+        <li><a href="/shoppingapp">Shopping App</a></li>
+        <li><a href="/sellonsnapdeal">Sell on Snapdeal</a></li>
+        <li><a href="/advertiseonsnapdeal">Advertise on Snapdeal</a></li>
+        <li><a href="/mediaenquiries">Media Enquiries</a></li>
+        <li><a href="/beaffiliate">Be an Affiliate</a></li>
+      </ul>
+      <!-- FAQ Contact Us Online Shopping-->
+      <ul class="app-info">
+        <li>NEED HELP ?</li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contactus">Contact Us</a></li>
+        <li><a href="/onlineshopping">Online Shopping</a></li>
+      </ul>
+      <ul class="app-info">
+        <li>SUBSCRIBE</li>
+        <li>
+          <form id="footer-subscribe-form">
+            <input type="email" id="subscribemail" name="subscribemail" />
+            <input type="submit" value="SUBMIT" />
+          </form>
+        </li>
+        <li>
+          <p>
+            Register now to get updates on promotions<br />
+            and coupons. Or <a href="/downloadapp">Download App</a>
+          </p>
+        </li>
+      </ul>
+      <span class="footer-arrow"
+        ><a href="#app-header"
+          ><img src="./ecommerce/images/homepage/Group 2600.png"
+        /></a>
+      </span>
+      <hr />
+      <div class="footer-payment-social-div">
+        <div class="bottom-payment-div">
+          <h5>PAYMENT</h5>
+          <a href="#"><img src="./ecommerce/images/homepage/Image 38.png" /></a>
+          <a href="#"><img src="./ecommerce/images/homepage/Image 39.png" /></a>
+          <a href="#"><img src="./ecommerce/images/homepage/Image 40.png" /></a>
+          <a href="#"><img src="./ecommerce/images/homepage/Image 41.png" /></a>
+          <a href="#"><img src="./ecommerce/images/homepage/Image 42.png" /></a>
+          <a href="#"><img src="./ecommerce/images/homepage/Image 43.png" /></a>
+        </div>
+        <div class="bottom-social-div">
+          <h5>CONNECT</h5>
+          <a href="https://www.facebook.com/"
+            ><img src="./ecommerce/images/homepage/Image 44.png"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="./ecommerce/images/homepage/Image 45.png"
+          /></a>
+          <a href="https://www.youtube.com/"
+            ><img src="./ecommerce/images/homepage/Image 46.png"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./ecommerce/images/homepage/Image 47.png"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
